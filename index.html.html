@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>Accordion list style with active filtering</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- jQuery -->
+<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+
+<!-- 'Accordion' script -->
+<script defer type="text/javascript" src="./js/list-els-acc.js"></script>	
+<!-- Tag filter script -->
+<script defer type="text/javascript" src="./js/tag-filter.js"></script>			  
+
+<!-- My own CSS -->
+<link rel="stylesheet" type="text/css" href="./style.css"  />
+
+
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="row">
+
+			<div id="main" class="col-md-7">
+					
+					<div class="list">
+							<div class="top">
+								<div class="top-left">
+										<h2>List header</h2>
+								</div>
+								
+								<div class="top-right">
+									<a id="tag-1" class="tag tag-1" href='#' class='tag'>Tag #1</a>
+									<a id="tag-2" class="tag tag-2" href='#' class='tag'>Tag #2</a>
+									<a id="tag-3" class="tag tag-3" href='#' class='tag'>Tag #3</a>
+									<a id="tag-4" class="tag tag-4" href='#' class='tag'>Tag #4</a>
+									<a id="tag-5" class="tag tag-5" href='#' class='tag'>Tag #5</a>
+									<a id="tag-6" class="tag tag-6" href='#' class='tag'>Tag #6</a>
+									<a id="tag-7" class="tag tag-7" href='#' class='tag'>Tag #7</a>
+									<a id="tag-8" class="tag tag-8" href='#' class='tag'>Tag #8</a>
+								</div>
+								</div>		
+								<div class="list-header">
+									<div class="name">Column #1</div>
+										<div class="other-params">
+											<div class="flex-box">
+												<div class="column-2">Column #2</div>
+												<div class="column-3">Column #3</div>
+												<div class="column-2-with-column-3">Merged columns 2&3</div>
+											</div>
+										</div>		
+								</div>
+								<div class="list-body">
+						<div class="list-el tag-1 tag-2 tag-3">
+							<div class="intro">
+								<div class="name">Element title</div>
+								<div class="other-params">
+									<div class="flex-box">					
+														
+										<div class="column-2">Other data</div>
+										<div class="column-3">
+											<button class="list-el-column-3">
+												<a class="column-3-link" href="#">Link </a>
+											</button>
+										</div>
+										
+													
+									</div>
+								</div>
+							</div>
+							<div class="desc">
+								<div class="excerpt-fullwidth">
+									<p>Ut eget luctus nulla. Sed porta arcu eget convallis eleifend. Donec viverra ex eget aliquet efficitur. Vivamus magna turpis, dapibus ut leo eget, accumsan blandit est. Integer nec lacus quis est vehicula convallis ac quis ligula.</p>
+									<p><a href="#">More information link</a></p>
+								</div>
+								
+									
+							</div>
+						</div><div class="list-el tag-3 tag-4 tag-5">
+							<div class="intro">
+								<div class="name">Element title</div>
+								<div class="other-params">
+									<div class="flex-box">
+									
+										<div class="column-2">Other data</div>
+										<div class="column-3">
+											<button class="list-el-column-3">
+												<a class="column-3-link" href="#">
+													<span class="column-3-only">Link </span>
+													<span class="column-2-with-column-3">Link 2</span>
+													<span class="column-2-with-column-3">Link 3</span>
+												</a>
+											</button>
+										</div>
+										
+													
+									</div>
+								</div>
+							</div>
+							<div class="desc">
+								<div class="excerpt">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus nisl in dapibus ultricies. Nam aliquam rhoncus sollicitudin. Vivamus rhoncus facilisis tempor. Donec semper condimentum consectetur. Nam non consequat quam. Nulla vitae tellus velit. Vivamus vitae ligula posuere, consectetur ex vitae, imperdiet tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+									<p><a href="#">More information link</a></p>
+								</div>
+								
+									
+								<div class="other-params">
+								
+														
+									<div class="flex-box single-column-3">
+										<div class="column-2">Other data</div>
+										<div class="column-3">
+											<button class="list-el-column-3">
+												<a class="column-3-link" href="#">Link </a>
+											</button>
+										</div>
+									</div>
+									
+								</div>
+								
+									
+							</div>
+						</div><div class="list-el tag-5 tag-6 tag-7">
+							<div class="intro">
+								<div class="name">Element title </div>
+								<div class="other-params">
+									<div class="flex-box">
+									
+															
+													
+										<div class="column-2">Other data</div>
+										<div class="column-3">
+											<button class="list-el-column-3">
+												<a class="column-3-link" href="#">
+													<span class="column-3-only">Link </span>
+													<span class="column-2-with-column-3">Link  #2</span>
+													<span class="column-2-with-column-3">Link  #3</span>
+												</a>
+											</button>
+										</div>
+										
+													
+									</div>
+								</div>
+							</div>
+							<div class="desc">
+								<div class="excerpt">
+									<p>Nunc gravida lacus vitae diam tincidunt, nec vestibulum mauris aliquam. Quisque condimentum laoreet turpis in tincidunt. Vestibulum ultricies erat velit, nec blandit tortor condimentum id. Vestibulum viverra enim ac aliquam volutpat. Maecenas eget nisi tincidunt, vulputate justo eu, sollicitudin velit.</p>
+									<p><a href="#">More information</a></p>
+								</div>
+								
+									
+								<div class="other-params">
+								
+																
+									<div class="flex-box single-column-3">
+										<div class="column-2">Other data</div>
+										<div class="column-3">
+											<button class="list-el-column-3">
+												<a class="column-3-link" href="#">
+													<span class="column-3-only">Link </span>
+													<span class="column-2-with-column-3">Link  #2</span>
+													<span class="column-2-with-column-3">Link  #3</span>
+												</a>
+											</button>
+										</div>
+									</div>
+									
+												
+									<div class="flex-box single-column-3">
+										<div class="column-2">Other data</div>
+										<div class="column-3">
+											<button class="list-el-column-3">
+												<a class="column-3-link" href="#">Link </a>
+											</button>
+										</div>
+									</div>
+									
+								</div>
+								
+									
+							</div>
+						</div><div class="list-el tag-3 tag-4 tag-9 tag-2 tag-6">
+							<div class="intro">
+								<div class="name">Element title</div>
+								<div class="other-params">
+									<div class="flex-box">
+									
+															
+													
+										<div class="column-2">Other data</div>
+										<div class="column-3">
+											<button class="list-el-column-3">
+												<a class="column-3-link" href="#">
+													<span class="column-3-only">Link </span>
+													<span class="column-2-with-column-3">Link  #2</span>
+													<span class="column-2-with-column-3">Link  #3</span>
+												</a>
+											</button>
+										</div>
+										
+													
+									</div>
+								</div>
+							</div>
+							<div class="desc">
+								<div class="excerpt">
+									<p>Phasellus ac tortor ligula. Maecenas vitae sem at urna vestibulum dapibus et eu odio. Proin eget metus ut risus lacinia luctus. Fusce feugiat nunc id ante aliquet, id interdum quam faucibus. Nulla commodo enim ut odio gravida posuere</p>
+									<p><a href=#">More information</a></p>
+								</div>
+								
+									
+								<div class="other-params">
+								
+														
+									<div class="flex-box single-column-3">
+										<div class="column-2">Other data</div>
+										<div class="column-3">
+											<button class="list-el-column-3">
+												<a class="column-3-link" href="#">Link </a>
+											</button>
+									</div>
+					 		</div>
+					</div>	
+				</div>
+				</div>
+			</div>
+			</div>	
+			</div>
+
+			
+			</div>
+
+	</div>
+
+<footer>
+
+</footer>
+
+</body>
+</html> 

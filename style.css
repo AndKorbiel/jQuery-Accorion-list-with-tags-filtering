@@ -1,0 +1,270 @@
+#main {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+}
+
+.list .top {
+margin-bottom: 10px;
+}
+
+.list .top-left {
+	float: left;
+	width: 60%;
+}
+
+.list .top-right {
+	text-align: right;
+}
+
+.list .tag {
+	display: inline-block;
+	font-size: 10px;
+	line-height: 6px;
+	font-weight: 500;
+	color: #5E5E5E;
+	padding: 7px;
+	border: 1px solid #CCC;
+	border-radius: 2px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+.list .tag-active {
+    background: #f73f3f;
+    border: 1px solid #f73f3f;
+    color: white !important;
+}
+
+.list-header {
+	padding: 25px 15px 25px 40px;
+	background: grey;
+	font-family: 'latoSemiBold', 'Lato', sans-serif;
+	color: #fff;
+	font-size: 14px;
+	line-height: 1em;
+	display: flex;
+	width: 100%;
+	box-shadow: 0 0px 20px hsla(0, 0%, 62%, 0.3);
+}
+
+.list .name {
+	width: 50%;
+	font-family: 'latoSemiBold', 'Lato', sans-serif;
+	padding-right: 10px;
+}
+
+.list .column-2 {
+	width: 40%;
+	font-family: 'latoSemiBold', 'Lato', sans-serif;
+	padding-right: 10px;
+}
+
+.list .column-3 {
+	width: 60%;
+	text-align: center;
+}
+
+.list-body {
+	box-shadow: 0 12px 20px hsla(0, 0%, 62%, 0.3);
+	background: #fbfbfd;
+	margin-bottom: 0;
+}
+
+.list-body .list-el {
+	padding: 25px 15px 25px 40px;
+	font-size: 14px;
+	color: #393B92;
+	border-bottom: 1px solid rgba(40, 40, 40, 0.1);
+	margin-bottom: 0;
+	cursor: pointer;
+}
+
+.list-body .active {
+	background: #fff;
+}
+
+.list-body .intro {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.list-body .list-el-column-3 {
+	background: #f73f3f;
+	border: 0;
+	border-radius: 3px;
+	padding: 4px 10%;
+	width: 150px;
+	font-family: 'latoSemiBold', 'Lato', sans-serif;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+}
+
+.list-body .list-el-column-3 .column-3-link {
+	color: white;
+	font-size: 14px;
+	line-height: inherit;
+	padding-right: 0;
+}
+
+.list-body .name:before, .active-list-el .name:before {
+	content: '+';
+	border: 1px solid #393B92;
+	border-radius: 10px;
+	padding: 1px 4px;
+	line-height: 1em;
+	font-size: 12px;
+	position: absolute;
+	left: -26px;
+	margin-top: 2px;
+	top: calc(50% - 10px);
+}
+
+.active-list-el .name:before {
+	content: '-';
+	padding: 1px 5px;
+}
+
+.list-body .desc {
+	margin-top: 15px;
+	display: flex;
+}
+
+.list-body .desc p, .list-body .desc a {
+	font-size: 12px;
+	line-height: 20px;
+	color: #5E5E5E;
+	padding-right: 20px;
+}
+
+.list-body .desc p:last-child {
+	margin-bottom: 0;
+}
+
+.desc .excerpt {
+	width: 50%;
+}
+
+.desc .excerpt-fullwidth {
+	width: 100%;
+}
+
+.active-list-el {
+	background: #ffffff;
+}
+
+p.shorter {
+	width: 54%;
+}
+
+.other-params {
+	width: 50%;
+}
+
+.other-params .flex-box  {
+	display: flex;
+	align-items: center;
+}
+
+.other-params .single-column-3 {
+	margin-bottom: 30px;
+}
+
+.list-body .desc .other-params .single-column-3:last-child {
+	margin-bottom: 0;
+}
+
+.other-params .name:before {
+	content: none;
+}
+
+.column-2-with-column-3 {
+	display: none;
+	text-align: center;
+	width: 100%;
+}
+
+.tag-no-result {
+    padding: 15px 40px;
+    font-size: 14px;
+}
+
+
+
+@media only screen and (max-width: 1199px){
+
+	.column-2-with-column-3 {
+		display: inline-block;
+	}
+
+	.list .column-2 {
+		display: none;
+	}
+
+	span.column-3-only {
+		display: none;
+	}
+
+	.list .column-3 {
+		width: 100%;
+	}
+
+	.list-body .list-el-column-3 {
+		width: 100%;
+		float: right;
+	}
+
+	.list .name, .list .excerpt {
+		width: 70%;
+	}
+	
+	.other-params {
+		width: 30%;
+		min-width: 120px;
+	}
+	
+	.list-header .column-3 {
+		display: none;
+	}
+
+	.list-body .list-el {
+		padding: 15px;
+	}
+	
+	.list-header {
+		padding: 15px;
+	}
+
+	.list-body .desc {
+		margin-top: 15px;
+	}
+
+	.other-params .single-column-3 {
+		margin-bottom: 15px;
+	}
+
+	.list-body .name::before {
+		display: none;
+	}	
+
+	.list .top-left {
+	    float: none;
+	}
+
+	.list .top-right {
+	    text-align: left;
+	}
+
+	.list .tag {
+		margin-left: 0;
+		margin-right: 5px;
+	}
+	
+	.list-header .column-3 {
+		display: none;
+	}
+}
+
